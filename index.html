@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Javító</title>
+</head>
+
+<body>
+
+  <form action="">
+    <label for=""> Név: <input type="text" id="nameInp"></label><br>
+    <label for=""> Kor: <input type="number" id="ageInp"></label><br>
+    <label for=""> Város: <input type="text" id="cityInp"></label><br>
+    <input type="button" value="Küldés" id="submitInp">
+    <p id="errorMessage"></p>
+  </form>
+  <ul id="lista">
+
+  </ul>
+  <div>
+    <p id="atlagEletkor"></p>
+  </div><br>
+  <p id="onkentesekSzama"></p><br>
+  <p id="legujabbOnkentes"></p><br>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
