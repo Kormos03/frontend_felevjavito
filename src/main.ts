@@ -1,4 +1,4 @@
-import './style.css'
+//import './style.css'
 import { Person, People } from './People';
 
 const people: Person[] = [];
@@ -37,7 +37,7 @@ function addPeople() {
     const age = parseInt((document.getElementById('ageInp') as HTMLInputElement).value);
     const city = (document.getElementById('cityInp') as HTMLInputElement).value;
     if (name.trim() == '' || name == null) { document.getElementById('errorMessage')!.textContent = 'A név mező nem lehet üres!'; return }
-    if (age < 1 || isNaN(age) || age > 130) { document.getElementById('errorMessage')!.textContent = 'A kor mezőnek számnak kell lennie és nem lehet kisebb, mint 1 vagy 130-nál nagyobb!'; return }
+    if (age < 1 || isNaN(age) || age > 130) { document.getElementById('errorMessage')!.textContent = 'A kor mezőnek számnak kell lennie és 1 és 130 között kell lennie!'; return }
     if (city.trim() == '' || city == null) { document.getElementById('errorMessage')!.textContent = 'A város mező nem lehet üres!'; return }
     let id: number = 1;
     for (const element in people) {
